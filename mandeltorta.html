@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mandeltorta</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <style>
+        @media only screen and (min-width: 1000px) {
+            .navbar-evenly-spaced {
+                display: flex;
+                align-items: stretch; /* Default */
+                justify-content: space-between;
+                width: 60%;
+                margin: auto;
+                padding: 0;
+            }
+
+            .navbar-evenly-spaced li {
+                display: block;
+                flex: 0 1 auto; /* Default */
+                list-style-type: none;
+                font-size: 1.5em;
+            }
+        }
+
+        .carousel-caption {
+            font-weight: bold;
+            color: black;
+        }
+
+        .col-sm-3 h4 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .col-sm-3 {
+            background-color: lightgray;
+        }
+
+        .col-sm-9 h4 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .col-sm-9 ul {
+            font-size: 1.2em;
+        }
+
+        .col-sm-3 h5 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        #heading_mandel {
+            font-family: 'Amatic SC', cursive;
+            font-size: 8em;
+            font-weight: bold;
+        }
+
+        .row {
+            margin-top: 3em;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg  navbar-dark sticky-top" style="background-color: #375975; ">
+    <a class="navbar-brand" href="välkomna.html" style="font-size: 1.8em">Välkomna </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto navbar-evenly-spaced">
+            <li class="nav-item ">
+                <a class="nav-link" href="landet.html">Landet <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sprak.html">Språket <span class="sr-only"></span></a>
+            </li>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Landskaper
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="norrland.html">Norrland</a>
+                    <a class="dropdown-item" href="svealand.html">Svealand</a>
+                    <a class="dropdown-item" href="götaland.html">Götaland</a>
+                </div>
+            </li>
+
+
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Specialiteter
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="fisk.html">Fisk</a>
+                    <a class="dropdown-item" href="salt.html">Salt</a>
+                    <a class="dropdown-item" href="kaka.html">Kaka och Tårta </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Städer
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="stockholm.html">Stockholm</a>
+                    <a class="dropdown-item" href="karlskrona.html">Karlskrona</a>
+
+                </div>
+            </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0" style="border-color: black">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+                    style="border-color: white; color: white">Search
+            </button>
+        </form>
+    </div>
+</nav>
+<div class="container" style="margin-top: 5em; margin-bottom: 5em">
+    <h1 id="heading_mandel" align="center">Mandel Tårta</h1>
+    <div class="row">
+        <div class="col-sm-3">
+            <h4>Ingredinser</h4>
+            <p></p>
+            <ul>
+                <h5>Mandelbottnar</h5>
+                <p></p>
+                <li>150 g sötmandel</li>
+                <li>5 st äggvitor</li>
+                <li>2 dl strösocker</li>
+                <p></p>
+                <h5>Smörkräm</h5>
+                <p></p>
+                <li>5 st äggulor</li>
+                <li>1 dl mjölk eller grädde</li>
+                <li>1 dl strösocker</li>
+                <li>175 g smör</li>
+                <p></p>
+                <h5>Garnering</h5>
+                <p></p>
+                <li>50 g mandelspån</li>
+
+            </ul>
+        </div>
+
+        <div class="col-sm-9">
+            <h4>Gör så här</h4>
+            <p>
+            <ul>
+                <li>Rita upp cirklar med 24 cm i diameter på bakplåtspapper. Eftersom det ska bli 2 st bottnar till
+                    tårtan så behövs 2 st bakplåtspapper med en cirkel på varje.
+                    (Ett tips är att använda passare, eller om man har en tallrik med ungefär så stor diameter så kan
+                    man rita efter den.)
+                </li>
+                <li>Mal mandeln med en kvarn eller hacka fint i en mixer.
+                </li>
+                <li>Knäck äggen och skilj gulor och vitor.
+                    Lägg äggvitorna i en torr och fettfri bunke som rymmer minst 2 liter. Lägg äggulorna i en liten
+                    skål och täck med plastfolie och ställ in i kylen, de ska senare användas till smörkrämen.
+                </li>
+                <li>Vispa äggvitorna till hårt skum. Vänd försiktigt ner sockret, rör om och fortsätt vispa med maskin
+                    till ett blankt och hårt skum (det ska gå och vända upp och ner på bunken utan att det rinner ut),
+                    det tar några minuter.
+                </li>
+                <li>Vänd försiktigt ner den malda mandeln och rör försiktigt till en jämn smet.</li>
+                <li>Bred ut smeten i jämnt lager, innanför dina uppritade cirklar på bakplåtspapper.
+                </li>
+                <li>Grädda en tårtbotten i taget i strax under mitten av ugnen i 175°C i ca 22 minuter.
+                    Vänd omedelbart upp den färdiggräddade bottnen mot ett bakplåtspapper och dra bort bakplåtspappret
+                    från bottnen. Låt bottnarna svalna på bakplåtspapper på galler.
+                </li>
+                <li>Lägg äggulorna i en kastrull och häll på mjölk eller grädde samt strösocker i en kastrull.
+                    Vispa till en jämn smet. Låt koka upp under omrörning. Vispa kraftigt och låt smeten sjuda
+                    (ej koka) tills den tjocknat. Vispa kraftigt under tiden! När smeten tjocknat, ta bort kastrullen
+                    från värmen och låt den svalna någon minut.
+                </li>
+            <li>Tillsätt sedan det kalla smöret, lite i taget, och vispa till en jämn smet mellan varje smörklick
+                tills allt smör har vispats ner och krämen är jämn, blank och fin. Låt sedan krämen kallna och
+                stelna i kylskåp.
+            </li>
+            <li>Rosta mandelspånen till garneringen i en stekpanna. Sätt på plattan strax under medelvärme och "stek"
+                den flagade mandeln i en stekpanna tills den blivit guldgul, ca 5 min. Låt svalna innan du senare
+                garnerar tårtan med dem.
+            </li>
+            <li>När tårtbottnarna svalnat, smörkrämen är kylskåpskall och de rostade mandelspånen svalnat till
+                rumstemperatur så kan man lägga ihop tårtan. Lägg den ena tårtbottnen på ett tårtfat.
+                Bred på halva mängden smörkräm.
+            </li>
+            <li>Lägg på den andra tårtbottnen och bred ut resten av smörkrämen ovanpå.
+                Strö över de rostade mandelspånen över det översta lagret smörkräm.
+                Förvara mandeltårtan i kylskåp fram till servering. Den går även att frysa.</li>
+            </ul>
+            </p>
+
+        </div>
+    </div>
+    <div class="container" align="center">
+        <img src="https://www.gusto.at/_storage/asset/9004915/storage/womanat:slideshow-large/file/129927758/64161877.jpg"
+             alt="" style="margin-top: 2em" align="center">
+    </div>
+</div>
+
+<footer class="page-footer font-small  pt-4 sticky-bottom" style=" background-color: #253b4d ; color: white">
+
+    <div class="container-fluid text-center text-md-left">
+
+        <div class="row">
+
+            <div class="col-md-9 mt-md-0 mt-6">
+
+                <h5 class="text-uppercase">Thanks for visiting my Website</h5>
+                <p>I hope you found all the information you where looking for.</p>
+
+            </div>
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <h5 class="text-uppercase">Links</h5>
+
+                <ul class="list-unstyled" id="ul_link" style="color: white">
+                    <li>
+                        <a href="välkomna.html">Mainpage</a>
+                    </li>
+                    <li>
+                        <a href="#!">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 4</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href=""> Cornelia Franta</a>
+    </div>
+
+
+</footer>
+</body>
+</html>

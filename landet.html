@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landet</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        @media only screen and (min-width: 1000px) {
+            .navbar-evenly-spaced {
+                display: flex;
+                align-items: stretch; /* Default */
+                justify-content: space-between;
+                width: 60%;
+                margin: auto;
+                padding: 0;
+            }
+
+            .navbar-evenly-spaced li {
+                display: block;
+                flex: 0 1 auto; /* Default */
+                list-style-type: none;
+                font-size: 1.5em;
+            }
+        }
+
+        #ul_cards h5 {
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        #ul_cards li {
+            font-size: 1em;
+            font-weight: normal;
+        }
+
+        .card-title {
+            font-size: 3em;
+            font-weight: bold;
+            color: #253b4d;
+            font-family: 'Amatic SC', cursive;
+
+
+        }
+        .footer-copyright a {
+            color: white;
+        }
+        #ul_link a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg  navbar-dark sticky-top " style="background-color: #375975; ">
+    <a class="navbar-brand" href="välkomna.html" style="font-size: 1.8em">Välkomna </a>
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            class="navbar-toggler"
+            data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto navbar-evenly-spaced">
+            <li class="nav-item active ">
+                <a class="nav-link" href="sprak.html">Landet <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="sprak.html">Språket <span class="sr-only"></span></a>
+            </li>
+            </li>
+            <li class="nav-item dropdown ">
+                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href=""
+                   id="navbarDropdown" role="button">
+                    Landskaper
+                </a>
+                <div aria-labelledby="navbarDropdown" class="dropdown-menu">
+                    <a class="dropdown-item" href="norrland.html">Norrland</a>
+                    <a class="dropdown-item" href="svealand.html">Svealand</a>
+                    <a class="dropdown-item" href="götaland.html">Götaland</a>
+                </div>
+            </li>
+
+
+            <li class="nav-item dropdown">
+                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href=""
+                   id="navbarDropdown1" role="button">
+                    Specialiteter
+                </a>
+                <div aria-labelledby="navbarDropdown" class="dropdown-menu">
+                    <a class="dropdown-item" href="fisk.html">Fisk</a>
+                    <a class="dropdown-item" href="salt.html">Salt</a>
+                    <a class="dropdown-item" href="kaka.html">Kaka och Tårta </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href=""
+                   id="navbarDropdown2" role="button">
+                    Städer
+                </a>
+                <div aria-labelledby="navbarDropdown" class="dropdown-menu">
+                    <a class="dropdown-item" href="stockholm.html">Stockholm</a>
+                    <a class="dropdown-item" href="karlskrona.html">Karlskrona</a>
+
+                </div>
+            </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0" style="border-color: black">
+            <input aria-label="Search" class="form-control mr-sm-2" placeholder="Search" type="search">
+            <button class="btn btn-outline-success my-2 my-sm-0" style="border-color: white; color: white"
+                    type="submit">Search
+            </button>
+        </form>
+    </div>
+</nav>
+<div class="container">
+    <table>
+        <thead>
+        <tr>
+            <th scope="col">
+
+                <div class="card mb-3">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Facta</h5>
+                        <ul id="ul_cards">
+                            <li>
+                                <h5>Huvudstad:</h5> Stockholm
+                            </li>
+                            <li>
+                                <h5>Officiellt språk:</h5> Svenska
+                            </li>
+                            <li>
+                                <h5>Invånare:</h5> 10,3 miljoner
+                            </li>
+                            <li>
+                                <h5>Area:</h5> 447 435 km²
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </th>
+
+
+            <th scope="col">
+            <th class="card mb-3" style="margin: 4em ">
+
+                <div class="card-body">
+                    <h5 class="card-title">Sverige</h5>
+                    <p class="card-text">Sverige är ett nordiskt land på Skandinaviska halvön i Nordeuropa.
+                        Sverige har landgräns i väst med Norge, i nordost med Finland samt angränsande territorialvatten
+                        till Norge i nordväst,
+                        Danmark i sydväst och Finland i öst.
+                        Sverige är också största landet i Europa.
+                        Huvudstad är Stockholm, landets största stad med 1,4 miljoner invånare.
+                        Sverige är en konstitutionell monarki med parlamentarisk demokrati och utvecklad ekonomi.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+                <img alt="..." class="card-img-bottom"
+                     src="https://cdn0.scrvt.com/954371187f9758716188a4deb091ab66/21b9959db497ad30/80f6c87cddaf/TopTeaser-1140x335_Schweden_Stockholm.jpg">
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <div class="card-body" style="margin: 4em">
+                    <h5 class="card-title">Nationalsång</h5>
+                    <p class="card-text">
+                        <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen frameborder="0" height="315"
+                                src="https://www.youtube.com/embed/WQFlu4L_iAU" width="800"></iframe>
+                    </p>
+                </div>
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
+
+
+</div>
+
+
+<footer class="page-footer font-small  pt-4" style=" background-color: #253b4d ; color: white">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-9 mt-md-0 mt-6">
+
+                <!-- Content -->
+                <h5 class="text-uppercase">Thanks for visiting my Website</h5>
+                <p>I hope you found all the information you where looking for.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Links</h5>
+
+                <ul class="list-unstyled" id="ul_link" style="color: white">
+                    <li>
+                        <a href="välkomna.html">Mainpage</a>
+                    </li>
+                    <li>
+                        <a href="#!">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 4</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href=""> Cornelia Franta</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>

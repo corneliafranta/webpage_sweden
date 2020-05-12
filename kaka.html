@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kaka och Torta</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <style>
+        @media only screen and (min-width: 1000px) {
+            .navbar-evenly-spaced {
+                display: flex;
+                align-items: stretch; /* Default */
+                justify-content: space-between;
+                width: 60%;
+                margin: auto;
+                padding: 0;
+            }
+
+            .navbar-evenly-spaced li {
+                display: block;
+                flex: 0 1 auto; /* Default */
+                list-style-type: none;
+                font-size: 1.5em;
+            }
+        }
+
+        .carousel-caption {
+            font-weight: bold;
+            color: black;
+        }
+
+        .col-sm-4 {
+            margin-right: auto;
+        }
+
+        #heading {
+            margin-top: 1em;
+        }
+
+        #heading h1 {
+            font-family: 'Amatic SC', cursive;
+            margin-top: 1em;
+            font-size: 5em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg  navbar-dark " style="background-color: #375975; ">
+    <a class="navbar-brand" href="välkomna.html" style="font-size: 1.8em">Välkomna </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto navbar-evenly-spaced">
+            <li class="nav-item ">
+                <a class="nav-link" href="landet.html">Landet <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sprak.html">Språket <span class="sr-only"></span></a>
+            </li>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Landskaper
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="norrland.html">Norrland</a>
+                    <a class="dropdown-item" href="svealand.html">Svealand </a>
+                    <a class="dropdown-item" href="götaland.html">Götaland </a>
+                </div>
+            </li>
+
+
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Specialiteter
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="fisk.html">Fisk</a>
+                    <a class="dropdown-item" href="salt.html">Salt</a>
+                    <a class="dropdown-item" href="kaka.html">Kaka och Tårta </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Städer
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="stockholm.html">Stockholm</a>
+                    <a class="dropdown-item" href="karlskrona.html">Karlskrona</a>
+
+                </div>
+            </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0" style="border-color: black">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+                    style="border-color: white; color: white">Search
+            </button>
+        </form>
+    </div>
+</nav>
+
+<div id="heading">
+    <h1 align="center">Kaka och Tårta</h1>
+</div>
+<div class="container" style="margin-top: 5em; margin-bottom: 5em">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.196flavors.com/wp-content/uploads/2015/06/kanelbullar-FP-1.jpg"
+                     class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kanellbullar</h5>
+                    <p class="card-text">Kanelbulle är en bakelse som är populär i Sverige.
+                        En kanelrulle består av en valsad remsa gjord utav jästsyrad deg på vilken en smör-kanel-
+                        och sockerblandning är strödd över. </p>
+                    <a href="kanellbullar.html" class="btn btn-primary">Receptet</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/vimdb/221745_5-616-4129-4129.jpg"
+                     class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mandel Tårta</h5>
+                    <p class="card-text">Ljuvligt len smörkräm med marängbottnar med malda mandlar.
+                        Att mandeltårtan är en storsäljare på kaféet är lätt att förstå.</p>
+                    <a href="mandeltorta.html" class="btn btn-primary">Receptet</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 ">
+            <div class="card" style="width: 18rem;">
+                <img src="https://cdn1.tasteline.com/kladdkaka-med-choklad-foto-kerstin-eriksson-360x360.jpg"
+                     class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kladdkaka</h5>
+                    <p class="card-text">Kladdkaka är en kompakt mjuk kaka med chokladsmak och kladdig konsistens.
+                        kladdkaka är mycket populärt bland barn</p>
+                    <a href="kladdkaka.html" class="btn btn-primary">Receptet</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4" style="margin-top: 2em">
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.gutekueche.at/img/rezept/24381/pepparkakor.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pepparkakor</h5>
+                    <p class="card-text">En pepparkaka är en småkaka som smaksätts med kanel, kardemumma, ingefära och
+                        kryddnejlikor.
+                        Pepparkakor äts året om, men brukar i modern tid ofta förknippas med advent, lucia och jul.</p>
+                    <a href="pepparkakor.html" class="btn btn-primary">Receptet</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4" style="margin-top: 2em">
+            <div class="card" style="width: 18rem;">
+                <img src="https://kaffeeundcupcakes.de/wp-content/uploads/2013/06/havreflarn1.jpg" class="card-img-top"
+                     alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Havreflarn</h5>
+                    <p class="card-text">Havreflarn är ett kexliknande bakverk bestående av, som namnet antyder,
+                        mestadels
+                        havre. De har en väldigt spröd konsistens. Flarnen ser vanligtvis ut som vanliga runda platta
+                        kakor,
+                        men det är vanligt att man vid hembak lägger de varma flarnen över en rulle så att de får en
+                        böjd
+                        form</p>
+                    <a href="harvreflan.html" class="btn btn-primary">Receptet</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4" style="margin-top: 2em">
+            <div class="card" style="width: 18rem;">
+                <img src="http://www.swedenvisa.co.uk/wp-content/uploads/2018/04/Prinsesstarta.jpg" class="card-img-top"
+                     alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Prinsesstårta</h5>
+                    <p class="card-text">En prinsesstårta är en tårta som är gjord av tårtbotten,
+                        vispad grädde och vaniljkräm, samt är överdragen med marsipan. Marsipanöverdraget är normalt
+                        grönt med ett tunt lager florsocker ovanpå och tårtan är ofta dekorerad med en röd
+                        marsipanros eller liknande </p>
+                    <a href="prinsesstorta.html" class="btn btn-primary">Receptet</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer font-small  pt-4 sticky-bottom" style=" background-color: #253b4d ; color: white">
+
+    <div class="container-fluid text-center text-md-left">
+
+        <div class="row">
+
+            <div class="col-md-9 mt-md-0 mt-6">
+
+                <h5 class="text-uppercase">Thanks for visiting my Website</h5>
+                <p>I hope you found all the information you where looking for.</p>
+
+            </div>
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <h5 class="text-uppercase">Links</h5>
+
+                <ul class="list-unstyled" id="ul_link" style="color: white">
+                    <li>
+                        <a href="välkomna.html">Mainpage</a>
+                    </li>
+                    <li>
+                        <a href="#!">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 4</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href=""> Cornelia Franta</a>
+    </div>
+
+
+</footer>
+</body>
+</html>
